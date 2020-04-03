@@ -7,7 +7,7 @@ external make: (
   ~children: React.element=?,
   ~classPrefix: string=?,
   ~className: string=?,
-  
+  ~speaker: React.element=?,
   ~container: Dom.element=?,
   ~delay: int=?,
   ~delayHide: int=?,
@@ -16,7 +16,7 @@ external make: (
   ~onBlur: ReactEvent.Focus.t => unit=?,
   ~onClick: ReactEvent.Mouse.t => unit=?,
   ~onFocus: ReactEvent.Focus.t => unit=?,
-  ~onMouseOut: ReactEvent.Mouse.t => unit=?, 
+  ~onMouseOut: ReactEvent.Mouse.t => unit=?,
   ~placement: [@bs.string] [
     | `left
     | `leftStart
